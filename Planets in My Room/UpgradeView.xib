@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpgradeView" customModule="Planets_in_My_Room" customModuleProvider="target">
+            <connections>
+                <outlet property="buyButton" destination="vpD-Rv-uFp" id="LUi-7j-0vP"/>
+                <outlet property="restoreButton" destination="IMo-Kb-VgP" id="jdo-Wc-YNf"/>
+                <outlet property="textView" destination="NnF-f3-aNE" id="Ve3-5Z-axh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="gUD-v8-Hjc">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zse-gd-D7F">
+                    <rect key="frame" x="0.0" y="10" width="340" height="440"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planets in My Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrh-ZV-rEP">
+                            <rect key="frame" x="78.333333333333329" y="0.0" width="183.66666666666669" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="dQ4-g8-tje"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" name="TextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2023 Stefan B. Kozhuharov" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y5A-i0-rVu" userLabel="Copyright">
+                            <rect key="frame" x="82.666666666666671" y="28.999999999999996" width="174.66666666666663" height="14.333333333333332"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" name="TextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnF-f3-aNE">
+                            <rect key="frame" x="0.0" y="56.333333333333343" width="340" height="342.66666666666663"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Upgrade">
+                                    <attributes>
+                                        <color key="NSColor" name="TextColor"/>
+                                        <font key="NSFont" metaFont="system" size="14"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-wA-Jzv">
+                            <rect key="frame" x="31" y="404" width="278" height="36"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpD-Rv-uFp" userLabel="Buy" customClass="HapticButton" customModule="Planets_in_My_Room" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="36"/>
+                                    <color key="backgroundColor" name="ButtonBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="mv3-gw-B2u"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Set distance to Sun">
+                                        <color key="titleColor" systemColor="systemIndigoColor"/>
+                                    </state>
+                                    <buttonConfiguration key="configuration" style="plain" title="Upgrade" cornerStyle="large">
+                                        <backgroundConfiguration key="background">
+                                            <color key="strokeColor" name="TextColor"/>
+                                        </backgroundConfiguration>
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="TextColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buyPressed:" destination="-1" eventType="touchUpInside" id="yQI-pJ-BuY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMo-Kb-VgP" userLabel="Restore purchase" customClass="HapticButton" customModule="Planets_in_My_Room" customModuleProvider="target">
+                                    <rect key="frame" x="120" y="0.0" width="158" height="36"/>
+                                    <color key="backgroundColor" name="ButtonBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="158" id="kMv-km-zhH"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Set distance to Sun">
+                                        <color key="titleColor" systemColor="systemIndigoColor"/>
+                                    </state>
+                                    <buttonConfiguration key="configuration" style="plain" title="Restore purchase" cornerStyle="large">
+                                        <backgroundConfiguration key="background">
+                                            <color key="strokeColor" name="TextColor"/>
+                                        </backgroundConfiguration>
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="TextColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="restorePressed:" destination="-1" eventType="touchUpInside" id="vll-es-Ivu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="nEg-Bh-mj6"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NnF-f3-aNE" firstAttribute="leading" secondItem="zse-gd-D7F" secondAttribute="leading" id="tUO-fL-zNT"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="mTx-Df-Cfr"/>
+            <color key="backgroundColor" name="CreditsView"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zse-gd-D7F" secondAttribute="bottom" constant="10" id="7t9-HY-cyD"/>
+                <constraint firstItem="zse-gd-D7F" firstAttribute="leading" secondItem="gUD-v8-Hjc" secondAttribute="leading" id="9HE-U8-sSM"/>
+                <constraint firstAttribute="trailing" secondItem="zse-gd-D7F" secondAttribute="trailing" constant="5" id="o09-Zl-aNi"/>
+                <constraint firstItem="zse-gd-D7F" firstAttribute="top" secondItem="gUD-v8-Hjc" secondAttribute="top" constant="10" id="rtw-Fu-EGc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.69465648854961" y="41.549295774647888"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ButtonBackground">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CreditsView">
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="1" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.14699999988079071" green="0.14100000262260437" blue="0.5350000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

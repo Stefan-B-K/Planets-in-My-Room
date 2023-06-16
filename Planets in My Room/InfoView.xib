@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoView" customModule="Planets_in_My_Room" customModuleProvider="target">
+            <connections>
+                <outlet property="gravity" destination="rOi-6y-k37" id="l1y-V1-07l"/>
+                <outlet property="mass" destination="dfV-HI-joX" id="GHJ-3a-Jg0"/>
+                <outlet property="orbitalPeriod" destination="VMk-Fo-JWb" id="9h6-YK-XOc"/>
+                <outlet property="orbitalPeriodView" destination="AcG-51-IY9" id="lj3-9r-G6d"/>
+                <outlet property="orbitalRadius" destination="Mlt-aD-2Cs" id="huJ-Xs-rWb"/>
+                <outlet property="orbitalRadiusView" destination="SiH-G4-ciR" id="etr-Ew-FEi"/>
+                <outlet property="radius" destination="Sqz-eq-6DY" id="iqj-Xb-hdQ"/>
+                <outlet property="rotationPeriod" destination="KFg-2s-Efq" id="Y14-YO-4E3"/>
+                <outlet property="satellites" destination="8Uo-YZ-y1d" id="lye-mo-jYY"/>
+                <outlet property="satellitesView" destination="VzA-R7-RnH" id="cpA-Oa-lG3"/>
+                <outlet property="url" destination="f1B-At-kgh" id="IkB-pl-n0N"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5af-ke-L7W">
+                    <rect key="frame" x="10" y="4" width="377" height="166"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="clP-bp-CBQ" userLabel="Radius Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMi-PZ-nnC" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="1NT-Ow-Pok"/>
+                                        <constraint firstAttribute="width" constant="116" id="LyL-PB-J3k"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-eq-6DY" userLabel="Radius">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="Rj3-ha-exQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vfK-Ke-sEH" userLabel="Mass Stack View">
+                            <rect key="frame" x="0.0" y="21" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRY-kY-aRq" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="116" id="BUL-Pv-yge"/>
+                                        <constraint firstAttribute="height" constant="19" id="qYt-n4-47C"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfV-HI-joX" userLabel="Mass">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="LfZ-g4-ERk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-ik-vh8" userLabel="Rotation Period Stack View">
+                            <rect key="frame" x="0.0" y="42" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation period:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU1-Cj-E1W" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="116" id="LjL-eB-8pv"/>
+                                        <constraint firstAttribute="height" constant="19" id="ZwI-lu-gwV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotation Period" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFg-2s-Efq" userLabel="Rotation Period">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="w3f-Gg-YlC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wyA-nh-WW7" userLabel="Gravity Stack View">
+                            <rect key="frame" x="0.0" y="63" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surface gravity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRi-Ev-t01" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="8o5-nc-9R0"/>
+                                        <constraint firstAttribute="width" constant="116" id="cLM-aN-v8l"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gravity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOi-6y-k37" userLabel="Gravity:">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="05e-ku-29j"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SiH-G4-ciR" userLabel="Orbital Radius Stack View">
+                            <rect key="frame" x="0.0" y="84" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orbital radius: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-UH-cdh" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="116" id="MBI-dW-iIb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orbital radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlt-aD-2Cs" userLabel="Orbital Radius">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="Zq7-B9-qhg"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-51-IY9" userLabel="Orbital Period Stack View">
+                            <rect key="frame" x="0.0" y="105" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orbital period:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wY-lu-hrI" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="116" id="Q3c-n0-lSD"/>
+                                        <constraint firstAttribute="height" constant="19" id="Wgo-Oj-6um"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orbital period" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-Fo-JWb" userLabel="Orbital Period">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="2Ob-yF-3Be"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VzA-R7-RnH" userLabel="Satellites Stack View">
+                            <rect key="frame" x="0.0" y="126" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large satellites:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pll-Nm-qoO" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="22w-nd-bbn"/>
+                                        <constraint firstAttribute="width" constant="116" id="tSz-Bj-gV6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satellites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uo-YZ-y1d">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="Isr-SB-EKI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-hp-Q2g" userLabel="More info Stack View">
+                            <rect key="frame" x="0.0" y="147" width="377" height="19"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More info:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5f-HJ-sxn" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="116" id="YKK-nb-KfH"/>
+                                        <constraint firstAttribute="height" constant="19" id="i9b-sg-xYj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="TextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="URL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f1B-At-kgh" userLabel="URL">
+                                    <rect key="frame" x="121" y="0.0" width="256" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="CCB-Rf-8NV"/>
+                                    </constraints>
+                                    <color key="textColor" name="hypelink"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5af-ke-L7W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="H90-AJ-wae"/>
+                <constraint firstAttribute="bottom" secondItem="5af-ke-L7W" secondAttribute="bottom" constant="4" id="P0k-K4-SGs"/>
+                <constraint firstItem="5af-ke-L7W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cSt-yK-8gH"/>
+                <constraint firstAttribute="trailing" secondItem="5af-ke-L7W" secondAttribute="trailing" constant="6" id="xgk-Cn-IMc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="206.87022900763358" y="60.563380281690144"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextColor">
+            <color red="0.14699999988079071" green="0.14100000262260437" blue="0.5350000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hypelink">
+            <color red="0.117458533" green="0.3755044475" blue="0.68907438210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

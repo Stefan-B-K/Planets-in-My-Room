@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		980B0A452992B8D200CF0DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980B0A442992B8D200CF0DAE /* LaunchScreen.storyboard */; };
+		981B836729922D1D003FDC91 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981B836629922D1D003FDC91 /* StoreKit.framework */; };
+		984DAAAD29899599004C56D8 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984DAAAC29899599004C56D8 /* SCNNode.swift */; };
+		9887B072298EA45F00D192A4 /* Private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9887B071298EA45F00D192A4 /* Private.plist */; };
+		9887B077298EAD0100D192A4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9887B076298EAD0100D192A4 /* Double.swift */; };
+		9887B079298EAD8100D192A4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9887B078298EAD8100D192A4 /* UIView.swift */; };
+		9887B07B298EADA500D192A4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9887B07A298EADA500D192A4 /* String.swift */; };
+		9887B07D298EAE3700D192A4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9887B07C298EAE3700D192A4 /* UIViewController.swift */; };
+		9887B0812991369100D192A4 /* UpgradeInfo.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9887B0802991369100D192A4 /* UpgradeInfo.rtf */; };
+		98A07B87298CF82600D4DB04 /* CreditsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A07B86298CF82600D4DB04 /* CreditsView.xib */; };
+		98A07B89298D0F7A00D4DB04 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A07B88298D0F7A00D4DB04 /* CreditsView.swift */; };
+		98A07B8B298D185A00D4DB04 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 98A07B8A298D185A00D4DB04 /* Credits.rtf */; };
+		98A07B91298D8AE300D4DB04 /* UpgradeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A07B90298D8AE300D4DB04 /* UpgradeView.xib */; };
+		98A07B93298D8B0400D4DB04 /* UpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A07B92298D8B0400D4DB04 /* UpgradeView.swift */; };
+		98BB275229870FAE00BDEABD /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BB275129870FAE00BDEABD /* InfoView.xib */; };
+		98BB2754298712F700BDEABD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB2753298712F700BDEABD /* InfoView.swift */; };
+		98BC63C52983BF0600BC9730 /* CelestialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC63C42983BF0600BC9730 /* CelestialInfo.swift */; };
+		98C8B2AB2971C60F008BBB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8B2AA2971C60F008BBB83 /* AppDelegate.swift */; };
+		98C8B2AF2971C60F008BBB83 /* PlanetARium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8B2AE2971C60F008BBB83 /* PlanetARium.swift */; };
+		98C8B2B22971C60F008BBB83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C8B2B02971C60F008BBB83 /* Main.storyboard */; };
+		98C8B2B42971C610008BBB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C8B2B32971C610008BBB83 /* Assets.xcassets */; };
+		98C8B2BE2971CA92008BBB83 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8B2BD2971CA92008BBB83 /* Config.swift */; };
+		98C8B2C02971FCE6008BBB83 /* Celestial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8B2BF2971FCE6008BBB83 /* Celestial.swift */; };
+		98E10DF62981C8AF00BBBAB4 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E10DF52981C8AF00BBBAB4 /* KeyboardLayoutConstraint.swift */; };
+		98E10DF82981D57600BBBAB4 /* HapticButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E10DF72981D57600BBBAB4 /* HapticButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		980B0A442992B8D200CF0DAE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		981B836629922D1D003FDC91 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		984DAAAC29899599004C56D8 /* SCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		986D3E3829810EB1005A93C7 /* Planets-in-My-Room-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Planets-in-My-Room-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9887B071298EA45F00D192A4 /* Private.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Private.plist; sourceTree = "<group>"; };
+		9887B076298EAD0100D192A4 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		9887B078298EAD8100D192A4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		9887B07A298EADA500D192A4 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9887B07C298EAE3700D192A4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9887B0802991369100D192A4 /* UpgradeInfo.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = UpgradeInfo.rtf; sourceTree = "<group>"; };
+		98A07B86298CF82600D4DB04 /* CreditsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditsView.xib; sourceTree = "<group>"; };
+		98A07B88298D0F7A00D4DB04 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		98A07B8A298D185A00D4DB04 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		98A07B90298D8AE300D4DB04 /* UpgradeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpgradeView.xib; sourceTree = "<group>"; };
+		98A07B92298D8B0400D4DB04 /* UpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeView.swift; sourceTree = "<group>"; };
+		98BB275129870FAE00BDEABD /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		98BB2753298712F700BDEABD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		98BC63C42983BF0600BC9730 /* CelestialInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialInfo.swift; sourceTree = "<group>"; };
+		98C8B2A72971C60F008BBB83 /* Planets in My Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets in My Room.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C8B2AA2971C60F008BBB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98C8B2AE2971C60F008BBB83 /* PlanetARium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetARium.swift; sourceTree = "<group>"; };
+		98C8B2B12971C60F008BBB83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98C8B2B32971C610008BBB83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98C8B2BD2971CA92008BBB83 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		98C8B2BF2971FCE6008BBB83 /* Celestial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celestial.swift; sourceTree = "<group>"; };
+		98E10DF52981C8AF00BBBAB4 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		98E10DF72981D57600BBBAB4 /* HapticButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98C8B2A42971C60F008BBB83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981B836729922D1D003FDC91 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		981B836529922D1D003FDC91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				981B836629922D1D003FDC91 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9887B075298EACD400D192A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9887B07C298EAE3700D192A4 /* UIViewController.swift */,
+				984DAAAC29899599004C56D8 /* SCNNode.swift */,
+				9887B076298EAD0100D192A4 /* Double.swift */,
+				9887B078298EAD8100D192A4 /* UIView.swift */,
+				9887B07A298EADA500D192A4 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		98C8B29E2971C60F008BBB83 = {
+			isa = PBXGroup;
+			children = (
+				98C8B2A92971C60F008BBB83 /* Planets in My Room */,
+				98C8B2A82971C60F008BBB83 /* Products */,
+				981B836529922D1D003FDC91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98C8B2A82971C60F008BBB83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98C8B2A72971C60F008BBB83 /* Planets in My Room.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98C8B2A92971C60F008BBB83 /* Planets in My Room */ = {
+			isa = PBXGroup;
+			children = (
+				98C8B2AA2971C60F008BBB83 /* AppDelegate.swift */,
+				98C8B2AE2971C60F008BBB83 /* PlanetARium.swift */,
+				98E10DF92981D5B000BBBAB4 /* Solar System */,
+				98E10DFA2981D5CA00BBBAB4 /* UI */,
+				9887B075298EACD400D192A4 /* Extensions */,
+				98C8B2B02971C60F008BBB83 /* Main.storyboard */,
+				98BB275129870FAE00BDEABD /* InfoView.xib */,
+				98A07B86298CF82600D4DB04 /* CreditsView.xib */,
+				98A07B90298D8AE300D4DB04 /* UpgradeView.xib */,
+				980B0A442992B8D200CF0DAE /* LaunchScreen.storyboard */,
+				98A07B8A298D185A00D4DB04 /* Credits.rtf */,
+				9887B0802991369100D192A4 /* UpgradeInfo.rtf */,
+				98C8B2B32971C610008BBB83 /* Assets.xcassets */,
+				986D3E3829810EB1005A93C7 /* Planets-in-My-Room-Info.plist */,
+				9887B071298EA45F00D192A4 /* Private.plist */,
+			);
+			path = "Planets in My Room";
+			sourceTree = "<group>";
+		};
+		98E10DF92981D5B000BBBAB4 /* Solar System */ = {
+			isa = PBXGroup;
+			children = (
+				98C8B2BD2971CA92008BBB83 /* Config.swift */,
+				98C8B2BF2971FCE6008BBB83 /* Celestial.swift */,
+				98BC63C42983BF0600BC9730 /* CelestialInfo.swift */,
+			);
+			path = "Solar System";
+			sourceTree = "<group>";
+		};
+		98E10DFA2981D5CA00BBBAB4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				98BB2753298712F700BDEABD /* InfoView.swift */,
+				98A07B88298D0F7A00D4DB04 /* CreditsView.swift */,
+				98A07B92298D8B0400D4DB04 /* UpgradeView.swift */,
+				98E10DF72981D57600BBBAB4 /* HapticButton.swift */,
+				98E10DF52981C8AF00BBBAB4 /* KeyboardLayoutConstraint.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98C8B2A62971C60F008BBB83 /* Planets in My Room */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C8B2BA2971C610008BBB83 /* Build configuration list for PBXNativeTarget "Planets in My Room" */;
+			buildPhases = (
+				98C8B2A32971C60F008BBB83 /* Sources */,
+				98C8B2A42971C60F008BBB83 /* Frameworks */,
+				98C8B2A52971C60F008BBB83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planets in My Room";
+			productName = "Planets in My Room";
+			productReference = 98C8B2A72971C60F008BBB83 /* Planets in My Room.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98C8B29F2971C60F008BBB83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					98C8B2A62971C60F008BBB83 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 98C8B2A22971C60F008BBB83 /* Build configuration list for PBXProject "Planets in My Room" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98C8B29E2971C60F008BBB83;
+			productRefGroup = 98C8B2A82971C60F008BBB83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98C8B2A62971C60F008BBB83 /* Planets in My Room */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98C8B2A52971C60F008BBB83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				980B0A452992B8D200CF0DAE /* LaunchScreen.storyboard in Resources */,
+				98A07B91298D8AE300D4DB04 /* UpgradeView.xib in Resources */,
+				98BB275229870FAE00BDEABD /* InfoView.xib in Resources */,
+				9887B072298EA45F00D192A4 /* Private.plist in Resources */,
+				98A07B8B298D185A00D4DB04 /* Credits.rtf in Resources */,
+				98A07B87298CF82600D4DB04 /* CreditsView.xib in Resources */,
+				9887B0812991369100D192A4 /* UpgradeInfo.rtf in Resources */,
+				98C8B2B42971C610008BBB83 /* Assets.xcassets in Resources */,
+				98C8B2B22971C60F008BBB83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98C8B2A32971C60F008BBB83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E10DF82981D57600BBBAB4 /* HapticButton.swift in Sources */,
+				98C8B2C02971FCE6008BBB83 /* Celestial.swift in Sources */,
+				98C8B2AF2971C60F008BBB83 /* PlanetARium.swift in Sources */,
+				98A07B89298D0F7A00D4DB04 /* CreditsView.swift in Sources */,
+				98C8B2AB2971C60F008BBB83 /* AppDelegate.swift in Sources */,
+				9887B077298EAD0100D192A4 /* Double.swift in Sources */,
+				984DAAAD29899599004C56D8 /* SCNNode.swift in Sources */,
+				9887B07D298EAE3700D192A4 /* UIViewController.swift in Sources */,
+				98E10DF62981C8AF00BBBAB4 /* KeyboardLayoutConstraint.swift in Sources */,
+				98BC63C52983BF0600BC9730 /* CelestialInfo.swift in Sources */,
+				9887B079298EAD8100D192A4 /* UIView.swift in Sources */,
+				98BB2754298712F700BDEABD /* InfoView.swift in Sources */,
+				98C8B2BE2971CA92008BBB83 /* Config.swift in Sources */,
+				9887B07B298EADA500D192A4 /* String.swift in Sources */,
+				98A07B93298D8B0400D4DB04 /* UpgradeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98C8B2B02971C60F008BBB83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98C8B2B12971C60F008BBB83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98C8B2B82971C610008BBB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98C8B2B92971C610008BBB83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98C8B2BB2971C610008BBB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W69D3B8FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Planets-in-My-Room-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PlanetARium;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augumented Reality";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iStefBK.Planets-in-My-Room";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98C8B2BC2971C610008BBB83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W69D3B8FV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Planets-in-My-Room-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = PlanetARium;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Augumented Reality";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iStefBK.Planets-in-My-Room";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98C8B2A22971C60F008BBB83 /* Build configuration list for PBXProject "Planets in My Room" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C8B2B82971C610008BBB83 /* Debug */,
+				98C8B2B92971C610008BBB83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C8B2BA2971C610008BBB83 /* Build configuration list for PBXNativeTarget "Planets in My Room" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C8B2BB2971C610008BBB83 /* Debug */,
+				98C8B2BC2971C610008BBB83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98C8B29F2971C60F008BBB83 /* Project object */;
+}
